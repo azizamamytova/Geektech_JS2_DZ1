@@ -2,7 +2,8 @@ const phoneInput = document.querySelector('.phoneInput');
 const phoneCheck = document.querySelector('.phoneCheck');
 const phoneResult = document.querySelector('.phoneResult');
 
-const phoneRegExp = /^\ \d{2}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/;
+const phoneRegExp =/^0\d{13}$|1\d{13}$/ ;
+
 
 phoneCheck.addEventListener('click', () => {
     if(phoneRegExp.test(phoneInput.value)) {
@@ -13,4 +14,7 @@ phoneCheck.addEventListener('click', () => {
         phoneResult.style.color = 'red'
     }
 });
+
+
+const block = document.querySelector(".little_block")
 
